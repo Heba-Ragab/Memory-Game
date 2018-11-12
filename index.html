@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Memory Game </title>
+    <meta name="description" content="">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css'>    
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css'>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/APP.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1> Memory Game</h1>
+        </header>
+        <p class="alert alert-success tempHide">Your  score : <span class="badge"></span></p>
+
+        <section class="my panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves"></span> Moves
+            <span  class=" my timer" id="timer">
+                <label id="minutes">00</label>:<label id="seconds">00</label>
+            </span>
+
+            <div class="repeat">
+        		<a href=""><i class="fa fa-repeat"></i></a>
+        	</div>
+        </section>
+
+        <ul class="deck">
+            <li class="block">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="matching block">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="block show">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="block">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+    </div>
+    <script src="JS/jquery.JS"></script>
+    <script src="JS/sweetalert2.all.JS"></script>
+    <script src="JS/helpers.JS"></script>
+    <script src="JS/timer.JS"></script>
+    <script src="JS/APP.JS"></script>
+</body>
+</html>
